@@ -1,5 +1,5 @@
 import React from 'react';
-import { StoryItem } from '../types';
+import type { StoryItem } from '../types';
 import { CheckCircle, AlertTriangle, XCircle, Tag, Hash, Activity } from 'lucide-react';
 
 interface StoryCardProps {

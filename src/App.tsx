@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { StoryItem } from './types';
+import type { StoryItem } from './types';
 import { Feed } from './components/Feed';
 import { Sidebar } from './components/Sidebar';
 import { Inbox, AlertTriangle, Filter, Loader2 } from 'lucide-react';

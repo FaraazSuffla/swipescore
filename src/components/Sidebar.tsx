@@ -1,5 +1,5 @@
 import React from 'react';
-import { StoryItem } from '../types';
+import type { StoryItem } from '../types';
 import { Code, Box } from 'lucide-react';
 
 interface SidebarProps {
