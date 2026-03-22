@@ -4,6 +4,10 @@ import fs from 'fs'
 
 // https://vite.dev/config/
 export default defineConfig({
+  server: {
+    host: true,
+    allowedHosts: ['host.docker.internal'],
+  },
   plugins: [
     react(),
     {
