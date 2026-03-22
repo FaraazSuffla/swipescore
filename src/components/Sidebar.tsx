@@ -1,12 +1,13 @@
 import React from 'react';
 import type { StoryItem } from '../types';
-import { Code, Box } from 'lucide-react';
+import { Code, Box, X } from 'lucide-react';
 
 interface SidebarProps {
   item: StoryItem | null;
+  onClose?: () => void;
 }
 
-export const Sidebar: React.FC<SidebarProps> = ({ item }) => {
+export const Sidebar: React.FC<SidebarProps> = ({ item, onClose }) => {
   if (!item) {
     return (
       <div className="h-full flex flex-col items-center justify-center text-slate-500 bg-slate-900 border-l border-slate-800 p-8">
@@ -18,11 +19,18 @@ export const Sidebar: React.FC<SidebarProps> = ({ item }) => {
 
   return (
     <div className="h-full bg-slate-900 border-l border-slate-800 flex flex-col">
-      <div className="p-6 border-b border-slate-800 flex items-center gap-3">
-        <div className="p-2 bg-indigo-500/10 rounded-lg">
-          <Code size={20} className="text-indigo-400" />
+      <div className="p-6 border-b border-slate-800 flex items-center justify-between">
+        <div className="flex items-center gap-3">
+          <div className="p-2 bg-indigo-500/10 rounded-lg">
+            <Code size={20} className="text-indigo-400" />
+          </div>
+          <h2 className="text-lg font-semibold text-slate-200 tracking-tight">Source Data</h2>
         </div>
-        <h2 className="text-lg font-semibold text-slate-200 tracking-tight">Source Data</h2>
+        {onClose && (
+          <button onClick={onClose} className="p-1.5 rounded-lg text-slate-400 hover:text-slate-200 hover:bg-slate-800 transition-colors">
+            <X size={18} />
+          </button>
+        )}
       </div>
       <div className="flex-1 overflow-auto p-6 scrollbar-thin scrollbar-thumb-slate-700 scrollbar-track-transparent">
         <pre className="text-xs font-mono text-indigo-200/80 leading-relaxed">

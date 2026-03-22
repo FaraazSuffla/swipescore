@@ -8,7 +8,7 @@ interface FeedProps {
   onSelect: (item: StoryItem) => void;
 }
 
-export const Feed: React.FC<FeedProps> = ({ items, activeItem, onSelect }) => {
+export const Feed: React.FC<FeedProps> = React.memo(({ items, activeItem, onSelect }) => {
   return (
     <div className="flex-1 overflow-y-auto p-6 lg:p-10 scrollbar-thin scrollbar-thumb-slate-700 scrollbar-track-transparent">
       <div className="max-w-3xl mx-auto space-y-6 pb-20">
@@ -23,4 +23,4 @@ export const Feed: React.FC<FeedProps> = ({ items, activeItem, onSelect }) => {
       </div>
     </div>
   );
-}
+})

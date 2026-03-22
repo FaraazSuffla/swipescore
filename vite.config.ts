@@ -18,8 +18,15 @@ export default defineConfig({
             let body = '';
             req.on('data', chunk => body += chunk);
             req.on('end', () => {
-              fs.writeFileSync('./public/data/stories.json', body);
-              res.end('Success');
+              try {
+                JSON.parse(body);
+                fs.writeFileSync('./public/data/stories.json', body);
+                res.writeHead(200);
+                res.end('Success');
+              } catch {
+                res.writeHead(400);
+                res.end('Invalid JSON');
+              }
             });
           }
         });

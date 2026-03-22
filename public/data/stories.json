@@ -1,0 +1,77 @@
+[
+  {
+    "source": {
+      "homeTeam": "Manchester City",
+      "awayTeam": "Crystal Palace",
+      "homeScore": 3,
+      "awayScore": 1,
+      "date": "2026-03-21",
+      "venue": "Etihad Stadium",
+      "homeBadge": "https://r2.thesportsdb.com/images/media/team/badge/vwpvry1467462651.png",
+      "awayBadge": "https://r2.thesportsdb.com/images/media/team/badge/ia6i3m1656014992.png",
+      "league": "English Premier League"
+    },
+    "story": {
+      "headline": "City Cruise Past Palace in Etihad Rout",
+      "body": "Manchester City put on a dominant display at the Etihad Stadium, dispatching Crystal Palace 3-1 in a match that was never truly in doubt. Two first-half goals set the tone before a late third sealed a comfortable victory for the hosts.",
+      "suggested_image_query": "Manchester City Crystal Palace Etihad match",
+      "tags": ["#PremierLeague", "#ManCity", "#CrystalPalace"],
+      "mood": "dominant"
+    },
+    "qa": {
+      "status": "pass",
+      "issues": [],
+      "score": 97
+    }
+  },
+  {
+    "source": {
+      "homeTeam": "Arsenal",
+      "awayTeam": "Chelsea",
+      "homeScore": 2,
+      "awayScore": 2,
+      "date": "2026-03-21",
+      "venue": "Emirates Stadium",
+      "homeBadge": "https://r2.thesportsdb.com/images/media/team/badge/vrtrtp1448813175.png",
+      "awayBadge": "https://r2.thesportsdb.com/images/media/team/badge/yvwvtu1448813215.png",
+      "league": "English Premier League"
+    },
+    "story": {
+      "headline": "Emirates Thriller Ends All Square",
+      "body": "A breathtaking London derby saw Arsenal and Chelsea share the spoils in a pulsating 2-2 draw at the Emirates. Chelsea twice came from behind to deny the Gunners all three points in a match full of drama and attacking intent.",
+      "suggested_image_query": "Arsenal Chelsea Emirates Stadium London derby",
+      "tags": ["#PremierLeague", "#Arsenal", "#Chelsea", "#LondonDerby"],
+      "mood": "exciting"
+    },
+    "qa": {
+      "status": "warn",
+      "issues": ["The story does not mention the match date.", "Venue capacity context could add depth."],
+      "score": 78
+    }
+  },
+  {
+    "source": {
+      "homeTeam": "Liverpool",
+      "awayTeam": "Manchester United",
+      "homeScore": 4,
+      "awayScore": 0,
+      "date": "2026-03-22",
+      "venue": "Anfield",
+      "homeBadge": "https://r2.thesportsdb.com/images/media/team/badge/uvxuqq1448813372.png",
+      "awayBadge": "https://r2.thesportsdb.com/images/media/team/badge/xzqdr11517660252.png",
+      "league": "English Premier League"
+    },
+    "story": {
+      "headline": "Anfield Erupts as Reds Demolish Rivals",
+      "body": "Liverpool delivered a masterclass at Anfield, humiliating Manchester United 4-0 in a performance that will live long in the memory. The Reds were relentless from the first whistle, tearing apart a shell-shocked United side.",
+      "suggested_image_query": "Liverpool Manchester United Anfield rivalry",
+      "tags": ["#PremierLeague", "#Liverpool", "#MUFC", "#NorthWestDerby"],
+      "mood": "dominant"
+    },
+    "qa": {
+      "status": "fail",
+      "issues": ["Story incorrectly implies this was a historic scoreline without evidence.", "No mention of goalscorers despite source data availability.", "Tone is excessively one-sided for a news report."],
+      "score": 45
+    }
+  }
+]
