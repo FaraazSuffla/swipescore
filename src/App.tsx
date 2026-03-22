@@ -18,9 +18,11 @@ function App() {
     fetch('/data/stories.json')
       .then(res => {
         if (!res.ok) throw new Error('Failed to fetch data');
-        return res.json();
+        return res.text();
       })
-      .then((json: StoryItem[]) => {
+      .then((text: string) => {
+        const trimmed = text.trim();
+        const json: StoryItem[] = trimmed ? JSON.parse(trimmed) : [];
         setData(json);
         setLoading(false);
       })
